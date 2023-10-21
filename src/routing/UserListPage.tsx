@@ -11,9 +11,13 @@ const UserListPage = () => {
   return (
     <div>
       <h3>UserListPage</h3>
+      <ul>
       {users.map(user => (
+        <li className="list-item">
         <Link to={`/users/${user.id}`} key={user.id}>{user.name}</Link>
+        </li>
       ))}
+      </ul>
     </div>
   )
 }
