@@ -1,21 +1,18 @@
 import { Link } from "react-router-dom"
 
-const UserListPage = () => {
-  
+const UserList = () => {
+
   const users = [
     {id:1, name: 'Mosh'},
     {id:2, name: 'John'},
     {id:3, name: 'Alice'},
   ]
 
-  console.log(users[0])
-
   return (
-    <div className="max-w-xl">
-      <h3>UserListPage</h3>
-      <ul className="list-group m-4">
+    <div>
+      <ul className="list-group">
       {users.map(user => (
-        <li  key={user.id} className="list-group-item">
+        <li key={user.id} className="list-group-item">
           <Link to={`/users/${user.id}`}>{user.name}</Link>
         </li>
       ))}
@@ -24,4 +21,4 @@ const UserListPage = () => {
   )
 }
 
-export default UserListPage
+export default UserList

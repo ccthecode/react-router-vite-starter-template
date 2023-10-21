@@ -4,7 +4,7 @@ import './index.css'
 import router from './routing/routes.tsx'
 import { RouterProvider } from 'react-router-dom'
 // Bootstrap
-// import './scss/styles.scss'
+import './scss/styles.scss'
 // import * as bootstrap from 'bootstrap'
 // import Alert from 'bootstrap/js/dist/alert';
 // // or, specify which plugins you need:
