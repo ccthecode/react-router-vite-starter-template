@@ -8,6 +8,8 @@ const UserListPage = () => {
     {id:3, name: 'Alice'},
   ]
 
+  console.log(users[0])
+
   return (
     <div className="max-w-xl">
       <h3>UserListPage</h3>
