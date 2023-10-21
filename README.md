@@ -9,6 +9,10 @@ Packages Included are:
 - autoprefixer
 - typescript
 
+- bootstrap
+
+*Bootstrap is added for rapid development*
+
 ## How to install
 
 1. Clone this repository
