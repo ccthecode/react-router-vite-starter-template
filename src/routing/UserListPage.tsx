@@ -9,12 +9,12 @@ const UserListPage = () => {
   ]
 
   return (
-    <div>
+    <div className="max-w-xl">
       <h3>UserListPage</h3>
-      <ul>
+      <ul className="list-group m-4">
       {users.map(user => (
-        <li className="list-item">
-        <Link to={`/users/${user.id}`} key={user.id}>{user.name}</Link>
+        <li  key={user.id} className="list-group-item">
+          <Link to={`/users/${user.id}`}>{user.name}</Link>
         </li>
       ))}
       </ul>
